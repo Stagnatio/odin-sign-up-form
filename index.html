@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Sign-Up Form</title>
 </head>
 <body>
+    <div class="sidebar">
+        <img src="images/sidebar.jpg">
+        <p>Ethereal</p>
+    </div>
     <form action="/post" method="post">
+        <div>
+            <p>This is a bunch of text explaining that this form doesn't actually sign you up for anything.</p>
+        </div>
+        <div>
+            <p>Let's do this!</p>
+        </div>
         <div>
             <label for="first_name">First Name:</label>
             <input type="text" name="first_name" placeholder="Bob" id="first_name">
@@ -29,10 +43,13 @@
             <input type="password" name="password" id="user_password">
         </div>
         <div>
-            <label for="user_password">Confirm Password:</label>
-            <input type="password" name="password" id="user_password">
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" name="confirm_password" id="confirm_password">
+        </div>
+        <div>
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </form>
-    <button type="submit">Create Account</button>
 </body>
 </html>
