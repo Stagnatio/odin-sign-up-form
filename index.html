@@ -16,37 +16,47 @@
         <p>Ethereal</p>
     </div>
     <form action="/post" method="post">
-        <div>
+        <div class="intro">
             <p>This is a bunch of text explaining that this form doesn't actually sign you up for anything.</p>
         </div>
-        <div>
-            <p>Let's do this!</p>
+        <div class="whitebox">
+            <!--<div class="tricky">
+                <p>Let's do this!</p>
+            </div><!-->
+            <div class="info">
+                <div class="line">
+                    <div class="field">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" name="first_name" placeholder="Bob" id="first_name">
+                    </div>
+                    <div class="field">
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" name="last_name" placeholder="Smith" id="last_name">
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="field">
+                        <label for="user_email">Email:</label>
+                        <input type="email" name="email" placeholder="bob.smith@gmail.com" id="user_email">
+                    </div>
+                    <div class="field">
+                        <label for="user_phone">Phone Number:</label>
+                        <input type="tel" name="phone" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12" id="user_phone">
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="field">
+                        <label for="user_password">Password:</label>
+                        <input type="password" name="password" id="user_password">
+                    </div>
+                    <div class="field">
+                        <label for="confirm_password">Confirm Password:</label>
+                        <input type="password" name="confirm_password" id="confirm_password">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="first_name">First Name:</label>
-            <input type="text" name="first_name" placeholder="Bob" id="first_name">
-        </div>
-        <div>
-            <label for="last_name">Last Name:</label>
-            <input type="text" name="last_name" placeholder="Smith" id="last_name">
-        </div>
-        <div>
-            <label for="user_email">Email:</label>
-            <input type="email" name="email" placeholder="bob.smith@gmail.com" id="user_email">
-        </div>
-        <div>
-            <label for="user_phone">Phone Number:</label>
-            <input type="tel" name="phone" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12" id="user_phone">
-        </div>
-        <div>
-            <label for="user_password">Password:</label>
-            <input type="password" name="password" id="user_password">
-        </div>
-        <div>
-            <label for="confirm_password">Confirm Password:</label>
-            <input type="password" name="confirm_password" id="confirm_password">
-        </div>
-        <div>
+        <div class="createaccount">
             <button type="submit">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
